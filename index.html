@@ -180,6 +180,23 @@
       max-width: 650px;
     }
 
+    /* NEW ABOUT SECTION */
+    .about-section {
+        margin-top: 60px;
+        background: var(--card-bg);
+        border: 1px solid var(--card-border);
+        padding: 32px;
+        border-radius: 12px;
+    }
+    .about-text {
+        font-size: 1.05rem;
+        color: var(--text-muted);
+        line-height: 1.8;
+    }
+    .about-text strong {
+        color: var(--text-main);
+    }
+
     /* 4. EXPERIENCE TIMELINE */
     .section-title {
       font-size: 2rem;
@@ -413,9 +430,33 @@
 
     </section>
 
+    <section class="about-section">
+        <h3 style="margin-bottom: 16px; color: var(--text-main);">About Me</h3>
+        <p class="about-text">
+            <strong>From Raw Data to Intelligent Action.</strong>
+            <br><br>
+            I am a Data Science practitioner passionate about bridging the gap between theoretical models and real-world applications. My journey is defined by a relentless curiosity to understand <em>why</em> things happen and using code to predict <em>what</em> happens next.
+            <br><br>
+            As a Python Developer and ML Engineer, I specialize in the full data lifecycle—from wrangling complex datasets with Pandas to deploying predictive models with Flask. My recent work involves building Generative AI agents and Social Anxiety predictors, proving that AI can solve human-centric problems. I am currently seeking a role where I can apply my skills in Machine Learning, Prompt Engineering, and Data Analysis to drive innovation.
+        </p>
+    </section>
+
     <section id="experience">
       <h2 class="section-title">Professional Experience</h2>
       <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <h3 class="role-title">Data Science Intern</h3>
+          <span class="company">Adhyayan</span>
+          <span class="date">May 2025 – Nov 2025</span>
+          <div class="description">
+            <ul>
+                <li>Developed and deployed a Social Anxiety Predictor using Linear Regression and Flask, achieving a model accuracy of 92% and reducing manual assessment time by 50%, contributing to an overall improvement in the efficiency of preliminary mental health screenings.</li>
+                <li>Engineered a Gen AI-powered Trip Planner that streamlined travel itinerary creation, facilitating the instant generation of personalized plans based on user prompts and increasing user engagement with the automated planning tool by 35%.</li>
+            </ul>
+          </div>
+        </div>
 
         <div class="timeline-item">
           <div class="timeline-dot"></div>
@@ -455,7 +496,7 @@
         <article class="card">
           <div class="card-content">
             <h3>Gen-AI Trip Planner</h3>
-            <p>An AI-powered assistant using Google Gemini 2.5 Flash to generate personalized travel itineraries, budget estimates, and recommendations.</p>
+            <p>An AI-powered assistant using Google Gemini API to generate personalized travel itineraries, budget estimates, and recommendations.</p>
             <div class="tech-tags">
               <span class="tag">Gemini API</span>
               <span class="tag">Generative AI</span>
